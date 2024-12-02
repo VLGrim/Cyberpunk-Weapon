@@ -1,0 +1,16 @@
+/* styles.css */
+body {
+    /* Main Page */
+
+position: relative;
+width: 1920px;
+height: 1080px;
+
+background: radial-gradient(95.03% 94.68% at 42.32% 4.95%, #351418 7.5%, #060E17 89.5%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
