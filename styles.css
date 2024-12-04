@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Cyberpunk';
+    src: url('fonts/Cyberpunk.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
 body, html {
     overflow: hidden;
     height: 100%;
