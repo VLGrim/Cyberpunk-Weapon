@@ -1,16 +1,131 @@
-/* styles.css */
-body {
-    /* Main Page */
-
-position: relative;
-width: 1920px;
-height: 1080px;
-
-background: radial-gradient(95.03% 94.68% at 42.32% 4.95%, #351418 7.5%, #060E17 89.5%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-
+body, html {
+    overflow: hidden;
+    height: 100%;
 }
 
-h1 {
-    color: #333;
-    text-align: center;
+body {
+    margin: 0;
+    padding: 0;
+    width: 1920px;
+    height: 1080px;
+    background: radial-gradient(95.03% 94.68% at 42.32% 4.95%, #351418 7.5%, #060E17 89.5%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.Tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 90px 0;
+    width: 100%;
+    max-width: calc(4 * 23% + 3 * 0.5px); 
+    margin: 0 auto;
+    position: absolute;
+    left: 220px;
+    top: 386px;
+}
+
+.tile {
+    width: 23%;
+    height: 174px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.rectangle-1 {
+    box-sizing: border-box;
+    width: 261px;
+    height: 153px;
+    background: #31181E;
+    border: 1px solid #FF5C53;
+    position: relative;
+}
+
+.centered-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.rectangle-9 {
+    box-sizing: border-box;
+    width: 261px;
+    height: 16px;
+    background: rgba(49, 24, 30, 0.6);
+    border: 1px solid rgba(255, 92, 83, 0.6);
+    position: absolute;
+    bottom: 0;
+}
+
+.tile-number {
+    font-family: 'Anonymous Pro', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #797979;
+    position: absolute;
+    bottom: 4px;
+    left: 10px;
+}
+
+
+.main-text {
+    position: absolute;
+    width: 849px;
+    height: 187px;
+    left: 535px;
+    top: 0px;
+  }
+  
+
+  .cyberpunk-text {
+    position: absolute;
+    width: 849px;
+    height: 103.6px;
+    left: calc(50% - 849px/2 - 0.5px);
+    top: 0px;
+  
+    font-family: 'Cyberpunk', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 162px;
+    
+    color: #0AEAEE;
+  }
+  
+
+  .weapon-list {
+    position: absolute;
+    width: 523px;
+    height: 60.58px;
+    left: calc(50% - 523px/2 - 0.5px);
+    top: 126.42px;
+  
+    font-family: 'Cyberpunk', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 81px;
+    
+    color: #0AEAEE;
+  }
+
+  .wires{
+position: absolute;
+width: 1695px;
+height: 251px;
+left: calc(50% - 1695px/2 - 0.5px);
+bottom: 342px;
 }
